@@ -2,13 +2,13 @@ import java.util.*;
 
 public class ykp {
 public static void main(String[] args) {
-Scanner in = new Scanner(System.in);
-int n = in.nextInt();
-int pos = 0;
-int zero = 0;
-int neg = 0;
+Scanner y = new Scanner(System.in);
+int n = y.nextInt();
+float pos = 0;
+float zero = 0;
+float neg = 0;
 for (int i = 0; i < n; i++) {
-int x = in.nextInt();
+int x = y.nextInt();
 if (x > 0) {
 pos++;
 } else if (x == 0) {
@@ -17,8 +17,8 @@ zero++;
 neg++;
 }
 }
-System.out.println(pos / (double) n);
-System.out.println(neg / (double) n);
-System.out.println(zero / (double) n);
+System.out.println(pos /  n);
+System.out.println(neg /  n);
+System.out.println(zero /  n);
 }
 }
